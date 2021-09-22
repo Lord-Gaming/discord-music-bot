@@ -87,7 +87,7 @@ module.exports = {
     try {
       var playingMessage = await queue.textChannel.send(
         new MessageEmbed()
-        .setTitle("Memutar")
+        .setTitle("Now playing")
         .setURL(`${song.url}`)
         .setThumbnail(message.author.displayAvatarURL({ format: "png" }))
         .setDescription(i18n.__mf("play.startedPlaying", { title: song.title}))
