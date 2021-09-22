@@ -11,9 +11,9 @@ module.exports = {
     var permissions = 70282305;
 
     let invite1 = new MessageEmbed()
-      .setTitle(`**Here is the Invite Link **`)
+      .setTitle(`**Ini Link Undangannya **`)
       .setDescription(
-        `**Then what are you waiting for? Invite me today!** \n\n [Invite Link](https://discord.com/oauth2/authorize?client_id={client_id}&permissions=${permissions}&scope=bot)`
+        `**Lalu apa yang Anda tunggu? Undang saya sekarang!** \n\n [Tautan Undang](https://discord.com/oauth2/authorize?client_id={client_id}&permissions=${permissions}&scope=bot)`
       )
       .setURL(
         `https://discord.com/oauth2/authorize?client_id={client_id}&permissions=${permissions}&scope=bot`

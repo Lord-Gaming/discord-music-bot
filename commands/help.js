@@ -18,16 +18,16 @@ module.exports = {
       .setThumbnail(message.client.user.displayAvatarURL({ format: "png" }))
       .setDescription(i18n.__("help.embedDescription"))
       .setColor("RANDOM")
-      .setFooter(`Requested by ${message.author.username}`);
+      .setFooter(`Diminta oleh ${message.author.username}`);
 
     commands.forEach((cmd) => {
       helpEmbed.addField(
         `\`\`\`${message.client.prefix}${cmd.name}\`\`\``,
-        `${cmd.description} | Aliases: (${cmd.aliases ? `${cmd.aliases}` : ""})`,
+        `${cmd.description} | Alias: (${cmd.aliases ? `${cmd.aliases}` : ""})`,
         true
       );
     });
-    helpEmbed.addField(`**Links!**`, `**[Support Server](${support_server || "https://discord.gg/HMEKZdEExZ"}) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=70282305&scope=bot)**`)
+    helpEmbed.addField(`**Tautan!**`, `**[Undang](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=70282305&scope=bot)**`)
 
     helpEmbed.setTimestamp();
 

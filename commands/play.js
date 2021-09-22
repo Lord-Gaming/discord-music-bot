@@ -55,14 +55,14 @@ module.exports = {
           if (res.statusCode == "302") {
             return message.client.commands.get("play").execute(message, [res.headers.location]);
           } else {
-            return message.reply("No content could be found at that url.").catch(console.error);
+            return message.reply("Tidak ada konten yang dapat ditemukan di url itu.").catch(console.error);
           }
         });
       } catch (error) {
         console.error(error);
         return message.reply(error.message).catch(console.error);
       }
-      return message.reply("Following url redirection...").catch(console.error);
+      return message.reply("Mengikuti pengalihan url...").catch(console.error);
     }
 
     const queueConstruct = {

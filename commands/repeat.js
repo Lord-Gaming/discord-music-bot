@@ -4,8 +4,8 @@ const i18n = require("i18n");
 i18n.setLocale(LOCALE);
 
 module.exports = {
-  name: "loop",
-  aliases: ["l"],
+  name: "repeat",
+  aliases: ["rp"],
   description: i18n.__("loop.description"),
   execute(message) {
     const queue = message.client.queue.get(message.guild.id);
